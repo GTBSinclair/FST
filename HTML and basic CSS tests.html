@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#first-paragraphs {
+    border: 2px solid powderblue;
+    padding: 20px;
+    margin: 5px;
+} /* Example of having two selectors in the same <head>" and <style> */
+
+* { /* Example of the use of the Universal selector which affects all elements */
+    font-style: italic;
+}
+
+</style>
+</head>
+<body>
+
+<h1>This, <br>is a heading with a line break</h1>
+
+<p id="first-paragraphs">All of the currently visible paragraphs (including this one) have a border with 20px padding</p>
+<p id="first-paragraphs">This is a paragraph with a border</p>
+<p id="first-paragraphs">This is another paragraph with a border</p><br><br>
+<p id="first-paragraphs">All of the paragraph border outlines also have 5px margin space between them except for this one because it is preceded by two line breaks in the source code</p>
+
+<head>
+<style>
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<p id="para1"> The style and format of this paragraph will change</p> <!-- CSS ID selector example-->
+<p>The style of this paragraph will remain unchanged</p>
+
+</body>
+
+<head>
+<style>
+
+
+h2.center { /* Example of a CSS comment. Also, h2.center is an example of only changing cerain elements with a CSS class selector. The format is element.class */
+    text-align: center;
+    color: cornflowerblue;
+}
+
+h2.large { /* Group any selectors by adding a comma between them */
+    font-size: 250%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 class="center">Cornflowerblue and center-aligned heading</h2>
+<h2 class="center large">This heading will be altered according to the two class selectors</h3> <!--Two class selectors acting on an element-->
+<p class="center">This paragraph will remain unchanged even if the "p" element has a class "center"</p>
+</body>
+
+
+
+
+
+
+
+
+
+</html>
+
+
